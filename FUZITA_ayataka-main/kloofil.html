@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" />
+<title>化粧品のフジタ|フジタのあゆみ</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/ress.min.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	
+
+	#header {
+  width: 100%;
+  height: 100vh;
+}
+
+.header__mainVisual {
+  padding: 40px 40px 0;
+  height: calc(100vh - 97px);
+  position: relative;
+}
+
+.header__mainVisual:after {
+  content: '';
+  position: absolute;
+  height: calc(100% - 40px);
+  width: calc(100% - 80px);
+  left: 40px;
+  top: 40px;
+  -webkit-box-shadow: inset 10px 10px 2px #FAFAF2, inset -10px -10px 2px #FAFAF2;
+          box-shadow: inset 10px 10px 2px #FAFAF2, inset -10px -10px 2px #FAFAF2;
+}
+
+.header__mainVisual img {
+  height: calc(100vh - 137px);
+  -webkit-filter: sepia(0%) contrast(90%) brightness(110%);
+          filter: sepia(0%) contrast(90%) brightness(110%);
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  height: 97px;
+  padding-left: 40px;
+}
+
+.header__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 30px;
+  border-left: 1px dotted #ff3434;
+}
+
+.header__nav ul li:first-child {
+  border: none;
+}
+
+.header__nav ul li a {
+  color: #333333;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.header__nav ul li a:after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #ff3434;
+  left: 0;
+  bottom: 0;
+  -webkit-animation: hoverout 0.2s forwards;
+          animation: hoverout 0.2s forwards;
+}
+
+.header__nav ul li a:hover:after {
+  -webkit-animation: hoverin 0.4s forwards;
+          animation: hoverin 0.4s forwards;
+}
+
+.header__nav ul li a:hover {
+  color: #ff3434;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header__nav ul li a.current {
+  color: #ff3434;
+}
+
+.header__logo {
+  width: 100px;
+  margin: 0 20px 0 40px;
+}
+.oteire{
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#haba{
+	margin: 100px;
+}
+.size h2{
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 70px;
+}
+.size2 h2{
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 70px;
+}
+.size{
+  padding-left: 70px;
+}
+.size2{
+  padding-left: 160px;
+  margin-right: 55px;
+}
+.img{
+  padding-left: 90px;
+}
+footer {
+  background-color: #fd9e9e;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer .box {
+  margin: 10px 20px;
+  height: 110px;
+  background-color: #fff;
+  padding: 0 20px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .box__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .box__share p {
+  font-size: 13px;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+footer .box__share span {
+  color: royalblue;
+}
+
+footer .box__share .share-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .box__share .share-icon li {
+  width: 34px;
+  margin: 0 10px;
+}
+
+footer .box__tel p {
+  padding-left: 24px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+footer .box__tel p:after {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: url(../address-icons/Phone_pink.svg);
+  left: 0px;
+}
+
+footer .box__tel a {
+  font-size: 20px;
+  font-size: 2rem;
+  color: #333333;
+}
+
+footer .box__tel:hover a {
+  color: royalblue;
+  text-decoration: underline;
+}
+.inner {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 680px) {
+  .inner {
+    max-width: 96%;
+  }
+}
+@media (max-width: 1000px){
+	#haba{
+	margin: 50px;
+}
+}
+@media (max-width: 900px){
+	#haba{
+		margin: 10px;
+	}
+}
+@media (max-width: 800px){
+	#haba{
+		display: block;
+	}
+}
+</style>
+<body>
+	<header id="header">
+        <p class="header__mainVisual">
+            <!-- <span class="header__catch_1">100年寄り添う</span>
+            <span class="header__catch_2">スキンケア</span> -->
+            <img src="images/main_visual.JPG" alt="main_visual">
+        </p>
+        <nav class="header__nav">
+            <h1 class="header__logo"><img src="images/logo.svg" alt="logo"></h1>
+            <ul>
+                <li><a class="current" href="index.html">フジタについて</a></li>
+                <li><a href="goods.html">フジタのお手入れ</a></li>
+                <li><a href="service.html">取り扱い商品</a></li>
+                <li><a href="index.html/#access">アクセス</a></li>
+            </ul>
+        </nav>
+    </header>
+	<main>
+		<section id="haba">
+			<div class="oteire">
+			<img src="images/グループ 1415.png" alt="">
+			<section class="size">
+			<h2>いつでも気軽に</h2>
+			<P>ここに本文が入ります。
+				ここに本文が入ります。
+				ここに本文が入ります。
+				ここに本文が入ります。
+				ここに本文が入ります。
+				ここに本文が入ります。
+				ここに本文が入ります。
+				ここに本文が入ります。
+				ここに本文が入ります。
+				ここに本文が入ります。</P>
+			</section>
+			</div>
+			</section>
+			<section id="haba">
+				<div class="oteire">
+				<section class="size2">
+				<h2>いつでも気軽に</h2>
+				<P>ここに本文が入ります。
+					ここに本文が入ります。
+					ここに本文が入ります。
+					ここに本文が入ります。
+					ここに本文が入ります。
+					ここに本文が入ります。
+					ここに本文が入ります。
+					ここに本文が入ります。
+					ここに本文が入ります。
+					ここに本文が入ります。</P>
+				</section>
+				<img src="images/グループ 1416.png" alt="">
+				</div>
+				</section>
+				<section id="haba">
+					<div class="oteire">
+					<img class="img" src="images/グループ 1417.png" alt="">
+					<section class="size">
+					<h2>いつでも気軽に</h2>
+					<P>ここに本文が入ります。
+						ここに本文が入ります。
+						ここに本文が入ります。
+						ここに本文が入ります。
+						ここに本文が入ります。
+						ここに本文が入ります。
+						ここに本文が入ります。
+						ここに本文が入ります。
+						ここに本文が入ります。
+						ここに本文が入ります。</P>
+					</section>
+					</div>
+					</section>
+	</main>
+  <footer>
+    <div class="inner">
+        <div class="box__flex">
+            <div class="box box__share">
+                <p><span>#化粧品のフジタ</span>をシェア</p>
+                <ul class="share-icon">
+                    <li><a href=""><img draggable="false" src="share-icons/Twitter_logo_circle.svg" alt="Twitterで共有"></a></li>
+                    <li><a href=""><img draggable="false" src="share-icons/Instagram_logo.png" alt="instagramで共有"></a></li>
+                    <li><a href=""><img draggable="false" src="share-icons/LINE_logo.svg" alt="LINEで共有"></a></li>
+                </ul>
+            </div>
+            <div class="box box__tel">
+                <p>お問い合わせ</p>
+                <a href="tel:">052-551-1962</a>
+            </div>
+        </div>
+        <p><small>Copyright &copy; All Rights Reserved.</small></p>
+    </div>
+</footer>
+</body>
+</html>

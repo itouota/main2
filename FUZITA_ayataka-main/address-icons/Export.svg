@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="20" height="20" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Export" clip-path="url(#clip-path)">
+    <rect id="長方形_570" data-name="長方形 570" width="20" height="20" fill="none"/>
+    <path id="パス_151" data-name="パス 151" d="M1.919,1.919V16.633h9.17v1.919H0V0H11.089V1.919Zm8.53,13.435L8.956,13.861l3.412-3.412H4.478V8.317h8.1L8.956,4.9l1.493-1.493L16.207,9.17Z" transform="translate(2)" fill="#fff"/>
+  </g>
+</svg>

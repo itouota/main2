@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headers</title>
+    <link rel="stylesheet" href="css/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            height: 4000px;
+            background: #f5f5f0;
+        }
+
+header {
+    margin-bottom: 20px;
+}
+
+        .part1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .part1_logo {
+            margin: 0 auto;
+            text-align: center;
+            height: 60px;
+            width: 140px;
+            background-color: #ccc;
+        }
+
+        .part1_nav ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .part1_nav ul li {
+            height: 52px;
+            width: calc(100% / 4);
+            background-color: #ccc;
+            vertical-align: middle;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #fff;
+        }
+
+        .part1_nav ul li a {
+
+        }
+
+        .part1_main_visual {
+            height: calc(100vh - 112px);
+            background-color: #ccc;
+            width: 100%;
+            position: relative;
+        }
+
+        .part1_catch_1 {
+            font-size: 36px;
+            position: absolute;
+            background-color: #fff;
+            padding: 2px 40px;
+            bottom: 30%;
+            left: 100px;
+
+        }
+        .part1_catch_2 {
+            font-size: 36px;
+            position: absolute;
+            background-color: #fff;
+            padding: 2px 40px;
+            bottom: 20%;
+            left: 300px;
+        }
+    .part2 {
+        height: 100vh;
+        position: relative;
+    }
+    .part2_main_visual {
+        height: 100%;
+        width: 100%;
+        background-color: #ccc;
+    }
+    .part2_right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 280px;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.8;
+    }
+
+    .part2_logo {
+        height: 80px;
+        width: 140px;
+        background-color: #ccc;
+        margin: 10px auto;
+    }
+
+    .part2_nav ul {
+        margin-left: 40px;
+        padding-top: 100px;
+    }
+
+    .part2_nav li {
+        margin-top: 60px;
+    }
+
+
+    .part3 {
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .part3_main_visual {
+        height: 100%;
+        width: calc(100% - 280px);
+        background-color: #ccc;
+    }
+    .part3_right {
+        width: 280px;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    .part3_logo {
+        height: 80px;
+        width: 140px;
+        background-color: #ccc;
+        margin: 10px auto;
+    }
+
+    .part3_nav ul {
+        margin-right: 40px;
+        padding-top: 100px;
+    }
+
+    .part3_nav li {
+        margin-top: 60px;
+        text-align: right;
+    }
+    </style>
+</head>
+<body>
+    <header class="part1">
+        <h1 class="part1_logo"><img src="" alt="logo"></h1>
+        <nav class="part1_nav">
+            <ul>       
+                <li><a href="">フジタについて</a></li>
+                <li><a href="">取り扱い商品</a></li>
+                <li><a href="">フジタのお手入れ</a></li>
+                <li><a href="">アクセス</a></li>
+            </ul>
+        </nav>
+        <p class="part1_main_visual"><span class="part1_catch_1">100年寄り添う</span><span class="part1_catch_2">スキンケア</span><img src="" alt="main_visual"></p>
+    </header>
+    <header class="part2">
+        <p class="part2_main_visual"><img src="" alt=""></p>
+        <div class="part2_right">
+            <h1 class="part2_logo"><img src="" alt=""></h1>
+            <nav class="part2_nav">
+                <ul>
+                    <li><a href="">フジタについて</a></li>
+                    <li><a href="">取り扱い商品</a></li>
+                    <li><a href="">フジタのお手入れ</a></li>
+                    <li><a href="">アクセス</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <header class="part3">
+        <p class="part3_main_visual"><img src="" alt=""></p>
+        <div class="part3_right">
+            <h1 class="part3_logo"><img src="" alt=""></h1>
+            <nav class="part3_nav">
+                <ul>
+                    <li><a href="">フジタについて</a></li>
+                    <li><a href="">取り扱い商品</a></li>
+                    <li><a href="">フジタのお手入れ</a></li>
+                    <li><a href="">アクセス</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <header class="part4">
+        
+    </header>
+</body>
+</html>

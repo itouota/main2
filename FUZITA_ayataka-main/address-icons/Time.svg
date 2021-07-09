@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="40" height="40" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Time" clip-path="url(#clip-path)">
+    <path id="パス_13" data-name="パス 13" d="M6,6A18.157,18.157,0,0,1,20,0,18.157,18.157,0,0,1,34,6a18.157,18.157,0,0,1,6,14,18.157,18.157,0,0,1-6,14,18.157,18.157,0,0,1-14,6A18.157,18.157,0,0,1,6,34c-3.667-4-6-8.333-6-14A18.157,18.157,0,0,1,6,6ZM29,29l2.333-2.333L23,18.333,20,5H16.667V20a3.026,3.026,0,0,0,1,2.333,1.164,1.164,0,0,0,.667.333Z" transform="translate(0 0)" fill="#fd9e9e"/>
+  </g>
+</svg>
